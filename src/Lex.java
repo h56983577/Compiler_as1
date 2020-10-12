@@ -44,6 +44,7 @@ public class Lex {
                                 System.out.println("RParenthesis");
                         }
                     } else if (ch == (char)-1) state = 5;
+                    else if (ch == ' ' || ch == '\t' || ch == '\n') state = 0;
                     else state = 4;
                     break;
                 case 1:
@@ -94,6 +95,7 @@ public class Lex {
                             }
                             state = 0;
                         } else if (ch == (char)-1) state = 5;
+                        else if (ch == ' ' || ch == '\t' || ch == '\n') state = 0;
                         else state = 4;
                     }
                     break;
@@ -129,6 +131,7 @@ public class Lex {
                             }
                             state = 0;
                         } else if (ch == (char)-1) state = 5;
+                        else if (ch == ' ' || ch == '\t' || ch == '\n') state = 0;
                         else state = 4;
                     }
                     break;
@@ -166,6 +169,7 @@ public class Lex {
                             }
                             state = 0;
                         } else if (ch == (char)-1) state = 5;
+                        else if (ch == ' ' || ch == '\t' || ch == '\n') state = 0;
                         else state = 4;
                     }
                     break;
