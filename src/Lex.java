@@ -139,6 +139,7 @@ public class Lex {
                     ch = (char)reader.read();
                     if (ch == '=') {
                         System.out.println("Assign");
+                        state = 0;
                     } else {
                         System.out.println("Colon");
                         if (Character.isLowerCase(ch) || Character.isUpperCase(ch)) {
